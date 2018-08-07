@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+    background: #e6e9e9;
+    background: linear-gradient(145deg, #232526, #232526);
+
+}
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 60%;
+    padding: 2em 2em 1em;
+}
+
+header {
+    text-align: center;
+}
+header h1 {
+    margin: 1.5em 0 0.2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 2.3em;
+    padding-bottom: 6%;
+}
+
+header hr {
+    margin: 0 auto 1em;
+    height: 2px;
+    background-color: #545454;
+    border: none;
+}
+
+h2{
+  padding-top: 3%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    padding-left: 5%;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    padding-left: 5%;
+}
+
+p {
+  padding-left: 5%;
+}
+
+section ul { margin: 15px 0 15px 0;
+             padding-left: 8%;
+             list-style: none;
+             line-height: 1.4;
+}
+
+section ul li:before {
+    content: "\00BB \0020";
+    color: #888;
+    position: absolute;
+    margin-left: -19px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-image: linear-gradient(145deg, #232526, #232526);
+    color:white;
+}
+
+footer {
+    padding-top: 5%;
+}
+
+footer p {
+    text-align: center;
+}

@@ -1,0 +1,109 @@
+html {
+    height: 100%;
+    background: #e6e9e9;
+    background: linear-gradient(145deg, #232526, #232526);
+
+}
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 1em;
+}
+
+header {
+    text-align: center;
+}
+header h1 {
+    margin: 1.5em 0 0.2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 2.3em;
+    padding-bottom: 6%;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-weight: bold;
+
+}
+
+header hr {
+    margin: 0 auto 1em;
+    width: 600px;
+    height: 2px;
+    background-color: #545454;
+    border: none;
+}
+
+
+ul {
+    padding-top: 10%;
+    list-style: none;
+    columns:3 ;
+    margin-right: auto;
+}
+
+ul li {
+    padding-bottom: 10%;
+    padding-right: 10%;
+}
+
+
+iframe {
+    width: 100%;
+}
+
+img {
+    position: center;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+input[type=submit]{
+    border: none;
+    padding: 5px 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 1em;
+    float: right;
+    width: 100%;
+}
+
+#vermas {
+  border: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 1em;
+  float: left;
+  width: 85%;
+}
+
+footer {
+    padding-top: 5%;
+}
+footer h4 {
+    text-align: center;
+}

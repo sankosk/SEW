@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- For responsive design -->
+    <meta charset="utf-8">
+    <meta name="description" content="Scientific Calculator made using HTML5, CSS and JavaScript">
+    <meta name="author" content="Esteban Montes">
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="recursos/css/CalculadoraCientifica.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <script src="recursos/js/CalculadoraCientifica.js"></script>
+
+</head>
+
+<body>
+<header>
+    <h1>Scientific Calculator</h1>
+    <hr/>
+    <h3>Calculator made with HTML5, CSS and JavaScript extending operations from the Simplest Calculator</h3>
+
+</header>
+<div class="container">
+
+    <div class="calc">
+
+        <div class="buttons">
+
+            <div class="display">
+                <textarea class="topDisplay" id="calcDisplay"></textarea>
+                <input type="text" class="botDisplay" id="resultDisplay"/>
+            </div>
+
+            <div class="button operator" onClick="calc.getFromMemory()">mrc</div>
+            <div class="button operator" onClick="calc.incMemory(document.getElementById('calcDisplay'))">m+</div>
+            <div class="button operator" onClick="calc.decMemory(document.getElementById('calcDisplay'))">m-</div>
+            <div class="button special" onClick="calc.removeFromDisplay(document.getElementById('calcDisplay'))">C</div>
+            <div class="button special" onClick="calc.resetDisplays(document.getElementById('calcDisplay'), document.getElementById('resultDisplay'))">CE</div>
+
+            <div class="button operator" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '**2')">x^2</div>
+            <div class="button operator" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '**3')">x^3</div>
+            <div class="button operator" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '**')">x^y</div>
+            <div class="button operator" onClick="calc.sCalc(document.getElementById('calcDisplay'), document.getElementById('resultDisplay'),'e^x')">e^x</div>
+            <div class="button operator" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '10**')">10^x</div>
+
+            <div class="button operator" onClick="calc.sCalc(document.getElementById('calcDisplay'), document.getElementById('resultDisplay'),'sin')">sin</div>
+            <div class="button operator" onClick="calc.sCalc(document.getElementById('calcDisplay'), document.getElementById('resultDisplay'),'cos')">cos</div>
+            <div class="button operator" onClick="calc.sCalc(document.getElementById('calcDisplay'), document.getElementById('resultDisplay'),'tan')">tan</div>
+            <div class="button operator" onClick="calc.sCalc(document.getElementById('calcDisplay'), document.getElementById('resultDisplay'),'n!')">n!</div>
+            <div class="button operator" onClick="calc.sCalc(document.getElementById('calcDisplay'), document.getElementById('resultDisplay'),'sqrt')">&radic;x</div>
+
+            <div class="button operator" onClick="calc.addConstant(document.getElementById('calcDisplay'),'pi')">&pi;</div>
+            <div class="button operator" onClick="calc.addConstant(document.getElementById('calcDisplay'),'e')">e</div>
+            <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '.')">.</div>
+            <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '0')">0</div>
+            <div class="button operator" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '/')">&divide;</div>
+
+            <div class="button operator" onClick="calc.sCalc(document.getElementById('calcDisplay'), document.getElementById('resultDisplay'),'log')">log</div>
+            <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '7')">7</div>
+            <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '8')">8</div>
+            <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '9')">9</div>
+            <div class="button operator" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '*')">x</div>
+
+            <div class="button operator" onClick="calc.sCalc(document.getElementById('calcDisplay'), document.getElementById('resultDisplay'),'log2')">log2</div>
+            <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '4')">4</div>
+            <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '5')">5</div>
+            <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '6')">6</div>
+            <div class="button operator" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '-')">-</div>
+
+            <div class="button operator" onClick="calc.sCalc(document.getElementById('calcDisplay'), document.getElementById('resultDisplay'),'log10')">log10</div>
+            <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '1')">1</div>
+            <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '2')">2</div>
+            <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '3')">3</div>
+            <div class="button operator" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '+')">+</div>
+
+            <div class="button horizontal operator" onClick="calc.bCalc(document.getElementById('calcDisplay'), document.getElementById('resultDisplay'))">=</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <h4>&copy; Esteban Montes Morales 2017</h4>
+</footer>
+
+</body>
+</html>

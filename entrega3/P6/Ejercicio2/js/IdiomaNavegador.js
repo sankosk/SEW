@@ -1,0 +1,1 @@
+document.write("<h2>El idioma del navegador: " + navigator.language + "</h2>");

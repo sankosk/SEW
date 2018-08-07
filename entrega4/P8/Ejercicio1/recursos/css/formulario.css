@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+    background: #e6e9e9;
+    background: linear-gradient(145deg, #232526, #232526);
+
+}
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 60%;
+    padding: 2em 2em 1em;
+}
+
+header {
+    text-align: center;
+}
+header h1 {
+    margin: 1.5em 0 0.2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 2.3em;
+    padding-bottom: 6%;
+}
+
+header hr {
+    margin: 0 auto 1em;
+    height: 2px;
+    background-color: #545454;
+    border: none;
+}
+
+
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 1em;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input[type=submit]{
+    border: none;
+    padding: 5px 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 1em;
+    float: right;
+    width: 100%;
+}
+
+
+input[type=submit]:hover {
+    background-image: linear-gradient(145deg, #232526, #232526);
+    color:white;
+}
+
+footer {
+    padding-top: 10%;
+}
+
+#detalles {
+    padding-top: 17%;
+}
+
+footer p {
+    text-align: center;
+}

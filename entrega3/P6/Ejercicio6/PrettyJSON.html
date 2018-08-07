@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JsonJuapo</title>
+    <link rel="stylesheet" type="text/css" href="recursos/css/PrettyJSON.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <script src="recursos/js/PrettyJSON.js"></script>
+</head>
+<body>
+    <header>
+        <h1>JsonJuapo hace tu JSON legible por humanos</h1>
+        <hr>
+        <h2>P6 - Ejercicio 6 - UO246305</h2>
+    </header>
+        <div id="before">
+            <h3>Pega aqui tu código JSON</h3>
+            <textarea id="jsonFeo"></textarea>
+            <input type="button" value="Hazlo bonito!" onClick="document.getElementById('resultado').value = new PrettyJSON(document.getElementById('jsonFeo').value).doPretty()"/>
+            <input type="button" value="Damelo Coloreado" onClick="alert('No esta funcionando aún, pero lo deje todo preparado para una fácil implementación, mira el código JS')"/>
+        </div>
+        <div id="after">
+            <h3>Observa como brilla</h3>
+            <textarea id="resultado"></textarea>
+        </div>
+
+        <footer>
+            <h4>&copy; Esteban Montes Morales - 2017</h4>
+        </footer>
+</body>
+</html>

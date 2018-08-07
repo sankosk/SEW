@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- For responsive design -->
+  <meta charset="utf-8">
+  <meta name="description" content="Calculator made using HTML5, CSS and JavaScript">
+  <meta name="author" content="Esteban Montes">
+
+  <title>Calculator</title>
+
+  <link rel="stylesheet" type="text/css" href="recursos/css/CalculadoraBasica.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+  <script src="recursos/js/CalculadoraBasica.js"></script>
+    
+</head>
+
+<body>
+  <header>
+    <h1>Simplest Calculator</h1>
+    <hr/>
+    <h3>Calculator made with HTML5, CSS and JavaScript for simple arithmetic operations.</h3>
+
+  </header>
+  <div class="container">
+
+    <div class="calc">
+
+      <div class="buttons">
+
+        <div class="display">
+          <textarea class="topDisplay" id="calcDisplay"></textarea>
+          <input type="text" class="botDisplay" id="resultDisplay"/>
+        </div>
+
+        <div class="button operator" onClick="calc.getFromMemory(document.getElementById('calcDisplay'))">mrc</div>
+        <div class="button operator" onClick="calc.incMemory(document.getElementById('calcDisplay'))">m+</div>
+        <div class="button operator" onClick="calc.decMemory()">m-</div>
+        <div class="button operator" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '/')">&divide;</div>
+
+        <div class="button" onClick="calc.addToDisplay(document.getElementsByTagName('textarea')[0], '7')">7</div>
+        <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '8')">8</div>
+        <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '9')">9</div>
+        <div class="button operator" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '*')">x</div>
+        
+        <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '4')">4</div>
+        <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '5')">5</div>
+        <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '6')">6</div>
+        <div class="button operator" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '-')">-</div>
+        
+        <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '1')">1</div>
+        <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '2')">2</div>
+        <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '3')">3</div>
+        <div class="button operator" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '+')">+</div>
+
+        <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '0')">0</div>
+        <div class="button" onClick="calc.addToDisplay(document.getElementById('calcDisplay'), '.')">.</div>
+        <div class="button special" onClick="calc.removeFromDisplay(document.getElementById('calcDisplay'))">C</div>
+        <div class="button special" onClick="calc.resetDisplays(document.getElementById('calcDisplay'), document.getElementById('resultDisplay'))">CE</div>
+        
+        <div class="button horizontal operator" onClick="calc.calc(document.getElementById('calcDisplay'),document.getElementById('resultDisplay'))">=</div>
+        
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h4>&copy; Esteban Montes Morales 2017</h4>
+  </footer>
+
+</body>
+</html>

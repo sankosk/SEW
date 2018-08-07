@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Encuesta sobre la calculadora científica hecho usando HTML, CSS y Javascript">
+        <meta name="author" content="Esteban Montes">
+        <title>Encuesta sobre calculadora científica</title>
+        <link rel="stylesheet" type="text/css" href="recursos/css/Encuesta.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+        <script src="recursos/js/Encuesta.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Encuesta sobre calculadora científica</h1>
+            <hr/>
+            <h2>P6 - Ejercicio 5 - UO246305</h2>
+        </header>
+
+        <h3>Datos personales</h3>
+        <form id="datosParticipante">
+            <div>
+                <label for="name">Nombre: (Min: 3 letras, Máx: 15 letras)</label>
+                <input type="text" id="name"/>
+            </div>
+            <div>
+                <label for="surname">Surname: (Min: 3 letras, Máx: 50 letras)</label>
+                <input type="text" id="surname"/>
+            </div>
+            <div>
+                <label for="age">Age: (Min: 3 años, Máx: 110 años)</label>
+                <input type="number" id="age"/>
+            </div>
+            <div>
+                <label for="gender">gender:</label>
+                <select id="gender">
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                    <option>Otro</option>
+                    <option>Prefiero no decirlo</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail"/>
+            </div>
+        </form>
+        <br>
+        <br>
+
+        <h3>Cuestiones sobre la calculadora científica</h3>
+        <form id="encuesta">
+            <div>
+                <label id="pregunta1">1. ¿Has utilizado alguna vez una calculadora científica online?</label><br>
+                <label class="ignored" for="Pregunta1_opt1">Si</label>
+                <input type="radio" name="pregunta1" id="Pregunta1_opt1" value="Si"/><br>
+                <label class="ignored" for="Pregunta1_opt2">No</label>
+                <input type="radio" name="pregunta1" id="Pregunta1_opt2" value="No"/><br>
+            </div>
+
+            <div>
+                <label id="pregunta2">2. En caso de haberla utilizado, ¿Dónde?</label><br>
+                <label class="ignored" for="Pregunta2_resp1">Educación primaria</label>
+                <input type="checkbox" id="Pregunta2_resp1" value="Educación primaria"/><br>
+
+                <label class="ignored" for="Pregunta2_resp2">Educación secundaria</label>
+                <input type="checkbox" id="Pregunta2_resp2" value="Educación secundaria"/><br>
+
+                <label class="ignored" for="Pregunta2_resp3">Bachiller</label>
+                <input type="checkbox" id="Pregunta2_resp3" value="Bachiller"/><br>
+
+                <label class="ignored" for="Pregunta2_resp4">Curso/Ciclo/Grado</label>
+                <input type="checkbox" id="Pregunta2_resp4" value="Curso/Ciclo/Grado"/><br>
+
+                <label class="ignored" for="Pregunta2_resp5">Universidad</label>
+                <input type="checkbox" id="Pregunta2_resp5" value="Universidad"/><br>
+
+                <label class="ignored" for="Pregunta2_resp6">Otro</label>
+                <input type="checkbox" id="Pregunta2_resp6" value="Otro"/><br>
+            </div>
+
+            <div>
+                <label id="pregunta3">3. ¿Cómo consideraría su experiencia utilizando la calculadora científica?</label>
+                <select id="opcionesPregunta3">
+                    <option value="10">Excelente</option>
+                    <option value="9">Muy buena</option>
+                    <option value="8">Bastante buena</option>
+                    <option value="7">Buena</option>
+                    <option value="6">Decente</option>
+                    <option value="5">Regular</option>
+                    <option value="4">Mala</option>
+                    <option value="3">Bastante mala</option>
+                    <option value="2">Muy mala</option>
+                    <option value="1">Pésima</option>
+                    <option value="0">Mejor no la hubieras programado</option>
+                </select>
+            </div>
+
+            <div>
+                <label id="pregunta4">4.¿Cómo de intuitiva considerarías que es la calculadora?</label>
+                <select id="opcionesPregunta4">
+                    <option value="10">Nací y sabía usarla</option>
+                    <option value="9">Muy intuitiva</option>
+                    <option value="8">Bastante intuitiva</option>
+                    <option value="7">Intuitiva</option>
+                    <option value="6">Suficiente Intuitiva</option>
+                    <option value="5">Algo normal</option>
+                    <option value="4">Poco intuitiva</option>
+                    <option value="3">Bastante poco intuitiva</option>
+                    <option value="2">Muy poco intuitiva</option>
+                    <option value="1">Nada intuitiva</option>
+                    <option value="0">Investigadores del CERN estan intentando comprender su uso</option>
+                </select>
+            </div>
+
+            <div>
+                <label>5. Sugerencias: (Min: 10 letras, Máx: 500 letras)</label>
+                <textarea id="pregunta5"></textarea>
+            </div>
+        </form>
+
+        <div id="button">
+            <input type="button" onClick="s.sendEmail();" value="Enviar datos"/>
+        </div>
+
+        <footer>
+            <h4>&copy; Esteban Montes Morales 2017</h4>
+        </footer>
+    </body>
+
+</html>

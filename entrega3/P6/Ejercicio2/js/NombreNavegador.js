@@ -1,0 +1,1 @@
+document.write("<h1>El nombre del navegador  : " + navigator.appName + "</h1>");

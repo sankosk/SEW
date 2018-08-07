@@ -1,0 +1,130 @@
+body {
+    background: linear-gradient(145deg, #00334d, #006699);
+}
+
+header {
+    text-align: center;
+}
+header h1 {
+    margin: 1.5em 0 0.2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 2.3em;
+    color: #e6f2ff;
+}
+
+header h3 {
+    max-width: 45%;
+    margin: 1.5em auto 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #b3e6ff;
+}
+
+header hr {
+    margin: 0 auto 1em;
+    width: 200px;
+    height: 2px;
+    background-color: #ff6600;
+    border: none;
+}
+
+
+.container {
+    max-width: 350px;
+    height: auto;
+    margin: 3em auto 2em;
+}
+.calc {
+    padding: 0.3em 0em;
+    width: 100%;
+    min-height: 550px;
+    background-color: #006699;
+    box-shadow: 0 10px 80px -20px #333, 0 10px 10px -9px #333;
+}
+.display {
+    width: 300px;
+    min-height: 95px;
+    margin: 1em auto;
+    padding: 0.5em;
+    box-sizing: border-box;
+    background-color: rgba(230, 247, 255, 0.9);
+    border: 1px solid #666;
+    font-family: 'Arimo', sans-serif;
+    position: relative;
+    word-wrap: break-word;
+}
+input {
+    height: 1.1em;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+}
+textarea {
+    background-color: transparent;
+    border: none;
+    resize: none;
+    height: 2.2em;
+    text-align: right;
+    overflow: hidden;
+}
+.topDisplay {
+    width: 99%;
+    color: #777;
+    font-size: 1.1em;
+}
+.botDisplay {
+    width: 92%;
+    font-size: 1.4em;
+    color: #006699;
+    position: absolute;
+    right: 0.3em;
+    bottom: 0.1em;
+}
+.buttons {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: left;
+}
+.button {
+    width: 50px;
+    max-height: 20px;
+    padding: 12px 0;
+    margin: 0.35em;
+    background-color: #fff;
+    color: #006699;
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+.button:active {
+    transform: translateY(-1px) scale3d(0.95, 0.95, 0.95);
+    box-shadow: 0 10px 6px -4px #666;
+}
+
+.horizontal {
+    padding: 10px 35%;
+}
+.special {
+    background-color: #ff6600;
+    color: #fff;
+}
+.operator {
+    background-color: #00aaff;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer {
+    margin: 4em 0 1em;
+    text-align: center;
+}
+footer h4 {
+    margin-bottom: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: #e6f2ff;
+}
